@@ -11,4 +11,9 @@ class TweetsController < ApplicationController
     )
     render :show
   end
+
+  def show
+    @tweet = Tweet.find_by(id: params["id"])
+    render :show
+  end
 end
