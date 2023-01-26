@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/tweets" => "tweets#index"
+  post "/tweets" => "tweets#create"
 end
